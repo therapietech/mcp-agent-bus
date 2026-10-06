@@ -19,7 +19,7 @@ collects the results.
 **Status:** current behavior of `worker.mjs` + the interactive `bus_receive`/`bus_send`
 flow. Considered the baseline for v1.
 
-## Known limitation to fix before publishing (v1.x)
+## Known limitation (v1.x follow-up)
 
 - **Per-task timeout in the worker.** Today a hung `cursor-agent -p` run makes the
   worker wait forever: no reply is sent, the consumed message is lost, and the worker

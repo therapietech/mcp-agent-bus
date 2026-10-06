@@ -1,5 +1,7 @@
 # MCP Agent Bus
 
+[![CI](https://github.com/therapietech/mcp-agent-bus/actions/workflows/ci.yml/badge.svg)](https://github.com/therapietech/mcp-agent-bus/actions/workflows/ci.yml)
+
 **Agent Bus is Therapie Tech's first open-source software.**
 
 A local, event-driven **MCP message bus** for coordinating multiple AI
@@ -258,7 +260,7 @@ Paths accept both `MCP_AGENT_BUS_DIR` (this repo) and `AGENT_BUS_DIR` (legacy en
 
 ```bash
 npm test     # unit tests (node:test), no external services
-npm run lint # eslint (flat config)
+npm run lint # optional; eslint (some optional docs scripts are excluded from CI)
 ```
 
 The core mailbox logic lives in [`src/mailbox.mjs`](src/mailbox.mjs) and is
