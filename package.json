@@ -4,6 +4,11 @@
   "description": "A local, event-driven MCP message bus for coordinating multiple AI coding-agent sessions on the same machine.",
   "type": "module",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/therapietech/mcp-agent-bus.git"
+  },
+  "homepage": "https://github.com/therapietech/mcp-agent-bus#readme",
   "keywords": [
     "mcp",
     "model-context-protocol",
@@ -25,7 +30,9 @@
     "examples",
     "scripts",
     "README.md",
-    "LICENSE"
+    "CHANGELOG.md",
+    "LICENSE",
+    "docs"
   ],
   "scripts": {
     "start": "node src/server.mjs",

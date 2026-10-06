@@ -1,14 +1,12 @@
 # MCP Agent Bus
 
+**Agent Bus is Therapie Tech's first open-source software.**
+
 A local, event-driven **MCP message bus** for coordinating multiple AI
 coding-agent sessions on the same machine. One session can hand a task to
 another — the other runs it and sends the result back — with **zero
 infrastructure**: no cloud, no database, no network service. Just Node.js and
 the local filesystem.
-
-> A small, self-contained tool I built while working with multiple AI
-> coding-agent sessions, shared openly so other teams can adopt the same
-> pattern.
 
 ## Releases
 
@@ -16,10 +14,10 @@ This project is **distributed via GitHub only** (no hosted service). Install = c
 
 | Version | Highlights |
 |---------|------------|
-| **[v1.1.0](https://github.com/josesuarezcordova/mcp-agent-bus/releases/tag/v1.1.0)** (latest) | Monitoring dashboards (`docs/watch-*.sh`) + worker token/clarity metrics |
-| **[v1.0.0](https://github.com/josesuarezcordova/mcp-agent-bus/releases/tag/v1.0.0)** | First public release — MCP bus + Quick start |
+| **[v1.1.0](https://github.com/therapietech/mcp-agent-bus/releases/tag/v1.1.0)** (latest) | Monitoring dashboards (`docs/watch-*.sh`) + worker token/clarity metrics |
+| **[v1.0.0](https://github.com/therapietech/mcp-agent-bus/releases/tag/v1.0.0)** | First public release — MCP bus + Quick start |
 
-Full history: [CHANGELOG.md](CHANGELOG.md) · [All releases](https://github.com/josesuarezcordova/mcp-agent-bus/releases)
+Full history: [CHANGELOG.md](CHANGELOG.md) · [All releases](https://github.com/therapietech/mcp-agent-bus/releases)
 
 **Upgrade v1.0.0 → v1.1.0:** `git pull` (or re-clone), `npm install` unchanged. New optional scripts under `docs/`; worker upgrade only affects you if you use the headless worker.
 
@@ -63,7 +61,7 @@ All sessions that should talk to each other must use the **same** `MCP_AGENT_BUS
 ### 1. Clone and install
 
 ```bash
-git clone https://github.com/josesuarezcordova/mcp-agent-bus.git
+git clone https://github.com/therapietech/mcp-agent-bus.git
 cd mcp-agent-bus
 ./scripts/setup.sh
 ```
@@ -163,7 +161,7 @@ Alternatively, put the same `mcpServers.mcp-agent-bus` block in **`~/.cursor/mcp
 ## Manual install (no setup script)
 
 ```bash
-git clone https://github.com/josesuarezcordova/mcp-agent-bus.git
+git clone https://github.com/therapietech/mcp-agent-bus.git
 cd mcp-agent-bus
 npm install
 ```
@@ -245,7 +243,7 @@ cd /path/to/mcp-agent-bus
 
 Optional offline LLM judge for clarity scores: `AGENT_BUS_HOME="$PWD" node docs/prompt-clarity.mjs`
 
-These dashboards are the same tooling used in the internal [therapietech/agent-bus](https://github.com/therapietech/agent-bus) repo (Therapie); paths accept both `MCP_AGENT_BUS_DIR` and `AGENT_BUS_DIR`.
+Paths accept both `MCP_AGENT_BUS_DIR` (this repo) and `AGENT_BUS_DIR` (legacy env name used in some setups).
 
 ## Configuration
 

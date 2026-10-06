@@ -24,7 +24,6 @@ Format loosely follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Added
 
 - Initial public release: MCP server, mailbox core, setup script, Quick start README.
-- Cross-region referrer-style mailbox behaviour documented for MCP consumers.
 
-[1.1.0]: https://github.com/josesuarezcordova/mcp-agent-bus/releases/tag/v1.1.0
-[1.0.0]: https://github.com/josesuarezcordova/mcp-agent-bus/releases/tag/v1.0.0
+[1.1.0]: https://github.com/therapietech/mcp-agent-bus/releases/tag/v1.1.0
+[1.0.0]: https://github.com/therapietech/mcp-agent-bus/releases/tag/v1.0.0
