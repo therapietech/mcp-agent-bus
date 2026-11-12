@@ -3,6 +3,18 @@
 All notable changes to this project are documented here.  
 Format loosely follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [Unreleased]
+
+### Added
+
+- **Microsoft Teams notifications** for the headless worker (`TEAMS_WEBHOOK_URL`, `TEAMS_NOTIFY_EVENTS`).
+- **`docs/teams-notify.md`** — step-by-step Teams Workflows setup, smoke test, and troubleshooting.
+
+### Changed
+
+- **`src/worker.mjs`** — posts Adaptive Cards on task done/fail and runaway `alarm` (best-effort; no secret in repo).
+- **Worker safety (Eirik feedback):** `WORKER_FORCE` is **off by default** (explicit `1` for `--force`). Refuse to start if `WORKER_FORCE=1` without `ALLOWED_SENDERS`. Startup warning about **global MCP** inheritance (`~/.cursor/mcp.json`). README + rules updated.
+
 ## [1.1.0] - 2026-10-02
 
 ### Added
